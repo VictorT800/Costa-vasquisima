@@ -1,0 +1,404 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  /*background-image: url(../imagenes/just-waves.png);*/
+  background-color: #004a6f;
+}
+
+header {
+  background-color: #004a6f;
+  width: 100%;
+  height: 188px;
+  position: fixed;
+  z-index: 10;
+}
+/*
+.contHeader {
+  background-color: #004a6f;
+  width: 100%;
+  height: 188px;
+  position: fixed;
+}
+*/
+
+header nav ul {
+  list-style: none;
+  background-color: #012f47;
+  display: flex;
+}
+
+header nav ul li {
+  flex: auto;
+  border-right: 1px solid #004467;
+  text-align: center;
+}
+
+header nav ul li:last-child {
+  border-right: none;
+}
+
+header nav ul li a {
+  color: #c4eaf5;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  display: block;
+  font-size: 20px;
+  line-height: 2;
+  transition: 0.4s;
+}
+
+header nav ul li a:hover {
+  background: #eaf8ff;
+  color: #012f47;
+}
+
+header nav ul li a i {
+  padding-right: 15px;
+}
+
+h1 {
+  color: #eaf8ff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 52px;
+  margin-top: 0;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  text-align: center;
+  letter-spacing: 2.5px;
+}
+
+h2 {
+  color: #004a6f;
+  font-family: 'Montserrat', sans-serif;
+}
+
+p{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  text-align: justify;
+  line-height: 2rem;
+}
+
+pre {
+  font-family: 'Open Sans', sans-serif;
+}
+
+section {
+  margin-top: 20px;
+}
+
+/*
+figure {
+  float: left;
+}
+*/
+
+.ancla::before {
+  display: block;
+  content: "";
+  margin-top: -188px;
+  height: 188px;
+  visibility: hidden;
+}
+
+.poema {
+  display: flex;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, .9);
+  color: antiquewhite;
+  border: 30px solid transparent;
+  margin-bottom: 20px;
+  border-image-source: url(../imagenes/marmol.jpg);
+  border-image-slice: 35;
+  box-shadow: 0 0 4px 4px #344853 inset;
+}
+
+.poema__foto img {
+  border-radius: 50%;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+  max-width: 70%;
+}
+
+.poema__poema {
+  margin-left: 25px;
+  padding-right: 12px;
+}
+
+.poema__poema  p {
+  padding-bottom: 8px;
+}
+
+.cuerpo {
+  max-width: 1100px;
+  margin: auto;
+  padding: 188px 15px 20px 15px;
+  background-color: #e8fffb;
+  /*
+  position: relative;
+  top: 188px;
+  */
+}
+
+.cuerpo p {
+  column-count: 2;
+  column-width: 400px;
+  column-gap: 2em;
+}
+
+.flecha {
+  width: 30px;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  /*display: block;*/
+}
+
+#INDICE, #Historia, #Geografia, #Playas {
+  border-bottom: 3px solid #004a6f;
+}
+
+#INDICE p {
+  margin-bottom: 6px;
+}
+
+.imagen-p1 figure {
+  float: left;
+  margin-right: 15px;
+}
+
+.imagenes figure {
+  float: none;
+  text-align: center;
+  margin: 0;
+}
+
+.imagenes figure img {
+  width: 100%;
+}
+
+.imagenes p {
+  text-align: center;
+}
+
+.peq {
+  display: inline-block;
+  margin: auto;
+}
+
+.peq img {
+  max-width: 200px;
+}
+
+.izquierda {
+  float: left;
+}
+
+.fotoplayas {
+  display: flex;
+}
+
+.wiki {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 80px;
+}
+
+.wiki a {
+  padding-left: 20px;
+  color: #004a6f;
+  vertical-align: middle;
+}
+
+.wiki a:hover {
+  color: #ff6d02;
+}
+
+.pie {
+  background: #212121;
+  padding: 15px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pie p {
+  font-size: 14px;
+  color: white;
+  text-align: center;
+}
+
+.parrafo-pie-borde {
+  border: #565656 10px groove;
+  margin-top: 10px;
+  padding: 5px 40px;
+}
+
+.pie abbr {
+  cursor: help;
+}
+.volver {
+  line-height: 3;
+  /*
+  background-color: #012f47;
+  border-top: 2px solid #004467;
+  */
+  text-align: center;
+  position: relative;
+  background-color: #004a6f;
+}
+
+.volver a {
+  vertical-align: middle;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+  color: #c4eaf5;
+}
+
+.volver a:hover {
+  color: #cdff00;
+}
+
+.fa-arrow-right-to-bracket {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  /*padding-right: 10px;*/
+}
+
+.imagen-cabecera figure img {
+  max-width: 100%;
+}
+
+/* -- ASIDE -- */
+.aside-izq {
+  position: fixed;
+  left: 0;
+  top: 188px;
+  z-index: -1;
+}
+
+.aside-izq img {
+  height: 90vh;
+}
+
+.aside-der {
+  position: fixed;
+  right: 0;
+  top: 188px;
+  z-index: -1;
+}
+
+.aside-der img {
+  height: 90vh;
+}
+
+
+/* ----------- Media-queries ----------- */
+
+/* *****************  media-queries 1400px ******************* */
+
+@media screen and (max-width: 1400px) {
+  aside {
+    display: none;
+  }
+}
+
+/* *****************  media-queries 1000px ******************* */
+
+@media screen and (max-width: 1000px) {
+  #INDICE p {
+    margin-bottom: 0;
+    clear: both;
+  }
+  
+  .imagen-p1 figure {
+    margin-bottom: 10px;
+    text-align: center;
+    float: none;
+  }
+}
+
+/* *****************  media-queries 822px ******************* */
+
+@media screen and (max-width: 822px) {
+  .fotoplayas {
+    flex-direction: column;
+  }
+}
+
+/* *****************  media-queries 540px ******************* */
+
+@media screen and (max-width: 540px) {
+
+  header {
+    position: relative;
+  }
+
+  header nav ul {
+    flex-direction: column;
+  }
+
+  header nav ul li {
+    border-bottom: 1px solid #004467;
+  }
+  
+  header nav ul li:last-child {
+    border-bottom: none;
+  }
+
+  header nav ul li a {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .ancla::before {
+    margin-top: 0;
+    height: 0;
+  }
+
+  .cuerpo {
+    padding: 90px 15px 20px 15px;
+  }
+
+  .wiki {
+    flex-direction: column;
+    line-height: 40px;
+  }
+
+  .viki a {
+    font-size: 10px;
+  }
+}
+
+/* *****************  media-queries 370px ******************* */
+
+@media screen and (max-width: 370px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  .volver a {
+    font-size: 12px;
+  }
+
+  .cuerpo {
+    padding: 80px 15px 20px 15px;
+  }
+}

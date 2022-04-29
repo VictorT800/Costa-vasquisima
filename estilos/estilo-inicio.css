@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: #eaf8ff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 52px;
+  margin-top: 0;
+  padding-top: 18px;
+  text-align: center;
+  letter-spacing: 2.5px;
+}
+
+h2 {
+  color: #004a6f;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h4 {
+  font-size: 3em;
+  color: #eaf8ff;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 60px;
+  text-align: center;
+}
+
+figure {
+  float: left;
+}
+
+p{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  text-align: justify;
+  line-height: 2rem;
+}
+
+
+.icono {
+  width: 100vw;
+  height: 100vh;
+  /*background-color: #012f47;*/
+  background-image: url(../imagenes/beachFondo.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.icono i {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #2c4e70;
+  font-size: 60vh;
+  transition: .5s all;
+  text-shadow: 8px 8px 20px #eaf8ff,
+                -8px -8px 20px #eaf8ff,
+                8px -8px 20px #eaf8ff,
+                -8px 8px 20px #eaf8ff;
+}
+
+.icono i:hover {
+  color: #335d86;
+  cursor: pointer;
+  text-shadow: 8px 8px 20px #a9ff71,
+                -8px -8px 20px #a9ff71,
+                8px -8px 20px #a9ff71,
+                -8px 8px 20px #a9ff71;
+}
+
+.icono p {
+  font-size: 1.5em;
+  margin-top: 30px;
+  text-align: center;
+  text-shadow: 8px 8px 16px #eaf8ff,
+                -8px -8px 16px #eaf8ff,
+                8px -8px 16px #eaf8ff,
+                -8px 8px 16px #eaf8ff;
+}
+
+.icono p:last-child {
+  margin-top: 15px;
+}
+
+abbr {
+  cursor: help;
+}
+
+@media only screen and (max-width: 700px) {
+  
+  h4 {
+    font-size: 34px;
+  }
+
+  .icono p {
+    font-size: 1em;
+  }
+
+  .icono i {
+    font-size: 240px;
+  }
+}
